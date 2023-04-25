@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denuncias en CABA</title>
+
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+  </head>
+  <body>
+    <section>
+        <center>
+        <header >
+          <img src="Infobae.com_logo.png" width="500">
+        </header>
+        <br>
+        <h1>Estacionamiento problemático: <br> ¿Qué pasa en Palermo?</h1>
+        <h2 id="subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. </h2>
+        <br>
+        </center>
+        <p id="intro">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolore, aperiam, accusamus quos eum fugit, voluptatem dignissimos perspiciatis a minus voluptates! Provident ipsa, veritatis nulla exercitationem eligendi voluptates optio. Iure, culpa distinctio. Fugiat omnis vitae natus dolor? Ipsam odio dignissimos sint ullam culpa magnam iste. Neque expedita nemo nulla sequi aperiam iure corporis officiis error tenetur iste, nostrum quasi, cumque earum et, inventore in sed ducimus fuga rem voluptatibus temporibus ullam. Incidunt quibusdam, cupiditate delectus eius ipsa dolore mollitia, obcaecati maxime rem ab odit minima expedita nisi reprehenderit vitae labore? Quibusdam, dolore reiciendis? Quasi vitae ipsam cupiditate magni rerum cum.
+        </p>
+          <h3>El calor de las quejas en Palermo</h3>
+          <small> Este mapa de la ciudad de Buenos Aires representa la cantidad de denuncias vehículos mal estacionados por barrio con una distribución de calor del mes de enero del 2021. Palermo lidera el ranking con 1262 denuncias.</small>
+        <center>
+        <div class="chart" id="chart_1"></div>
+        </center>
+        <h5>Fuente de datos: <a href = "https://github.com/visualizacion-de-datos-utdt/vd_linea147/blob/main/147_vehiculos_mal_estacionados.csv">Pulse aquí para acceder a los datos.</a> Estos datos provienen de la linea 147 de la sección de vehículos mal estacionados de enero del 2021.</h5>
+        <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+            when an unknown printer took a galley of type and scrambled it to make a type
+            specimen book. It has survived not only five centuries, but also the leap into
+            electronic typesetting, remaining essentially unchanged. It was popularised in
+            the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+            and more recently with desktop publishing software like Aldus PageMaker 
+            including versions of Lorem Ipsum.
+        </p>
+        <h3>El hartazgo de los vecinos en Palermo</h3>
+        <small> El siguiente gráfico de barras representa la cantidad de denuncias de vehículos mal estacionados que tiene cada día de la semana en el barrio Palermo, durante el mes de enero de 2021.</small>
+        <center>
+        <div  class="chart" id="chart_2"></div>
+        </center>        
+        <h5>Fuente de datos: <a href = "https://github.com/visualizacion-de-datos-utdt/vd_linea147/blob/main/147_vehiculos_mal_estacionados.csv">Pulse aquí para acceder a los datos.</a> Estos datos provienen de la línea 147 de la sección de vehículos mal estacionados de enero del 2021.</h5>
+        <p>
+            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators 
+            on the Internet tend to repeat predefined chunks as necessary, making this the first 
+            true generator on the Internet. It uses a dictionary of over 200 Latin words, combined 
+            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+        </p>
+        <h3>La hora pico:
+          <span style="color: maroon;">Miércoles </span> vs
+          <span style="color: #F4A460 ;">Semana normalizada</span> 
+        </h3>
+        <small>El gráfico de líneas representa el promedio de denuncias de vehículos por hora los miercoles contra el resto de la semana en Palermo, dentro del mes de enero de 2021.</small>
+        <center>
+        <div  class="chart" id="chart_3"></div>
+        </center>
+        <h5>Fuente de datos: <a href = "https://github.com/visualizacion-de-datos-utdt/vd_linea147/blob/main/147_vehiculos_mal_estacionados.csv">Pulse aqui para acceder a los datos.</a> Estos datos provienen de la linea 147 de la seccion de vehículos mal estacionados de enero del 2021.</h5>
+        <p>
+            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators 
+            on the Internet tend to repeat predefined chunks as necessary, making this the first 
+            true generator on the Internet. It uses a dictionary of over 200 Latin words, combined 
+            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators 
+            on the Internet tend to repeat predefined chunks as necessary, making this the first 
+            true generator on the Internet. It uses a dictionary of over 200 Latin words, combined 
+            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+            If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't 
+            anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators 
+            on the Internet tend to repeat predefined chunks as necessary, making this the first 
+            true generator on the Internet. It uses a dictionary of over 200 Latin words, combined 
+            with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable.
+        </p>
+    </section>
+    <footer>Autores: Tomás Morita, Ezequiel Kaplan y Emilio Leoni</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+    <script src="Scripts/chart_1.js"></script>
+    <script src="Scripts/chart_2.js"></script>
+    <script src="Scripts/chart_3.js"></script>
+  </body>
+</html>
